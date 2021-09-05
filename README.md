@@ -1,3 +1,51 @@
+###Installations
+
+Installed NVM, go to NVM git page to get instructions
+Needed to add a couple of their install script lines to my ~/.zshrc file
+Example $ open ~/.zshrc // then copy NVM git install script lines from their git page
+
+$ nvm install node
+$ npm install -g ganache-cli
+
+Navigate to this project folder
+$ npm install web3
+
+
+Running:
+
+Remix - 
+-from root directory $ ganache-cli
+-Deploy page: change network to web3 provider ‘http://localhost:8454'
+
+### MetaMask
+*change MetaMask network to localhost (change network details to url: http://127.0.0.1:8545.)
+* Click Add Account
+* import account - import private seed from ganache-cli
+* You now have access to a ganache address
+
+
+Deployment to GitHub Pages: 
+
+https://medium.com/swlh/create-deploy-host-react-app-for-free-github-pages-c1f41bed6497
+
+$ npm install gh-pages — save-dev
+
+package.json ->
+"homepage": "http://dylan-williamson.github.io/example-react-app",
+
+"scripts": {
+"predeploy": "npm run build",
+"deploy": "gh-pages -d build"
+}
+
+$ npm run deploy
+// go visit homepage url (the one you set in package.json). Make sure the 'name' field mirrors the app name
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
